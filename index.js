@@ -5,6 +5,7 @@ const routes = require('./routes/api');
 //set up express app
 
 const app = express();
+app.use(express.json());
 app.use('/api', routes);
 
 //listen for requests at:
